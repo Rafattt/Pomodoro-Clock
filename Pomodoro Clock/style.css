@@ -1,0 +1,178 @@
+html {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("bkg.png");
+
+}
+
+a {
+		color: rgba(0, 137, 32, 0.9);
+		text-shadow: 1px 2px 15px #048014;
+}
+
+#title {
+	text-align: center;
+	font-size: 64px;
+	padding-top: 20px;
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(0, 137, 32, 0.9);
+	text-shadow: 1px 2px 15px #048014;
+}
+
+#settings {
+	margin-top: 20px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.settings-titles {
+	padding-top: 5px;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(0, 137, 32, 0.9);
+	text-shadow: 1px 2px 15px #048014;
+}
+
+.minus, .plus  {
+	position:relative;
+	top:-5px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	color: blue;
+	font-size: 30px;
+}
+
+.plus {
+	top:-2px;
+}
+
+.settings-box {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 28px;
+	line-height: 28px;
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(0, 137, 32, 0.9);
+	text-shadow: 1px 2px 15px #048014;	
+}
+
+#break-box {
+	height: 120px;
+	width: 120px;
+	float: left;
+}
+
+#session-box {
+	height: 120px;
+	width: 120px;
+	margin-left: 280px;
+}
+
+.pomodoro-box { /*style for session state*/
+	height: 300px;
+	width: 300px;
+	background-color: black;
+	border-style: solid;
+	border-width: 3px;
+	 -webkit-transition: border 1s linear, box-shadow 1s linear;
+       -moz-transition: border 1s linear, box-shadow 1s linear;
+            transition: border 1s linear, box-shadow 1s linear;
+	border-color: blue;
+	box-shadow: 1px 2px 15px #0038F0;
+	margin: 30px auto 0px auto;
+	border-radius: 50%;
+	clear:both;
+	cursor: pointer;
+	z-index:4;
+}
+
+.pomodoro-box2 { /*style for break state*/
+	height: 300px;
+	width: 300px;
+	background-color: black;
+	border-style: solid;
+	border-width: 3px;
+	 -webkit-transition: border 1s linear, box-shadow 1s linear;
+       -moz-transition: border 1s linear, box-shadow 1s linear;
+            transition: border 1s linear, box-shadow 1s linear;
+	border-color: red;
+	box-shadow: 1px 2px 15px #D60000;
+	margin: 30px auto 0px auto;
+	border-radius: 50%;
+	clear:both;
+	cursor: pointer;
+	z-index:4;
+}
+
+.pomodoro-box.active { /*blue glover for session state*/
+	-webkit-box-shadow: 0 0 180px #0038F0;
+       -moz-box-shadow: 0 0 180px #0038F0;
+            box-shadow: 0 0 180px #0038F0;
+}
+
+.pomodoro-box2.active { /*red glover for session state*/
+	-webkit-box-shadow: 0 0 180px #D60000;
+       -moz-box-shadow: 0 0 180px #D60000;
+            box-shadow: 0 0 180px #D60000;
+}
+
+.pomodoro-box.inactive {  /*class added to reset glover state (pause and reset)*/
+	-webkit-box-shadow: 0 0 0px #0038F0;
+       -moz-box-shadow: 0 0 0px #0038F0;
+            box-shadow: 0 0 0px #0038F0;
+}
+
+
+
+#session-text {
+	padding-top: 30px;
+	margin-top:15px;
+	text-align: center;
+	color: rgba(0, 137, 32, 0.9);
+	text-shadow: 1px 2px 15px #048014;
+	font-size: 44px;
+	font-family: 'Orbitron', sans-serif;;
+}
+
+#session-clock {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 76px;
+	margin-top:10px;
+	text-align: center;
+	color: rgba(0, 137, 32, 0.9);
+	text-shadow: 1px 2px 15px #048014;
+}
+
+#reset {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(0, 137, 32, 0.9);
+	text-shadow: 1px 2px 15px #048014;
+	margin-top:70px;
+	border: solid 1px;
+	width: 55px;
+	float:right;
+	right: -200px;
+	position:relative;
+	cursor: pointer;
+}
+
+#reset:hover {
+	box-shadow: 1px 2px 15px #048014;
+}
+
+#credits {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(0, 137, 32, 0.9);
+	margin-top:70px;
+		float:left;
+	left: -300px;
+	position:relative;
+	font-size: 14px;
+}
